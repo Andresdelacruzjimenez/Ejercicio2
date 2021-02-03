@@ -44,7 +44,7 @@ public class Salario {
 		this.horasExtra = horasExtra;
 	}
 
-	public static float calculaSalarioBruto( String tipo, float ventasMes,float horasExtra) {
+	public static double calculaSalarioBruto( String tipo, double ventasMes,float horasExtra) {
 		int salario = 0;
 		if (tipo.equals("vendedor")) {
 			salario = 1000;
@@ -77,9 +77,9 @@ public class Salario {
 	}
 	
 	
-	public static float calculaSalarioNeto( float salario) {
+	public static double calculaSalarioNeto( double salario) {
 		
-		float salarioN=0;
+		double salarioN=0;
 		if (salario<1000) {
 			salarioN=salario;
 		}else {
